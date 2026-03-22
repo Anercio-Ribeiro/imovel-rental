@@ -97,11 +97,7 @@ As credenciais já estão pré-configuradas no `.env.local`. Apenas precisa de g
 As imagens são então carregadas automaticamente em `https://storagerealestateapp3000.blob.core.windows.net/imoveis/properties/{userId}/{timestamp}-{filename}`
 
 As variáveis de ambiente já estão configuradas:
-```env
-AZURE_STORAGE_ACCOUNT_NAME=storagerealestateapp3000
-AZURE_STORAGE_ACCOUNT_KEY=3DgwJszZa1jhXoLhY...
-AZURE_STORAGE_CONTAINER_NAME=imoveis
-```
+
 
 > ⚠️ **Segurança**: Em produção, rotacione a chave de acesso no Azure Portal e nunca a exponha publicamente. Use variáveis de ambiente seguras no Vercel/servidor.
 

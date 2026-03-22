@@ -239,9 +239,7 @@ AUTH_SECRET="gere com: openssl rand -hex 32"
 AUTH_URL="http://localhost:3000"
 
 # Azure Blob Storage (upload de imagens)
-AZURE_STORAGE_ACCOUNT_NAME=storagerealestateapp3000
-AZURE_STORAGE_ACCOUNT_KEY=3DgwJszZa1jhXoLhYAQWSC95C9aycr8MR94ZYjrSZzBrFi4EyngOIC7BF6f9Ks01O4HXL6CbRRAg+AStYSXxrw==
-AZURE_STORAGE_CONTAINER_NAME=imoveis
+
 
 # App
 NEXT_PUBLIC_APP_URL="http://localhost:3000"
