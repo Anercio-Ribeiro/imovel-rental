@@ -230,19 +230,6 @@ property_views  → id, propertyId, userId, viewedAt
 
 ## 🌐 Variáveis de Ambiente Completas
 
-```env
-# Base de dados (Neon)
-DATABASE_URL="postgresql://user:pass@host.neon.tech/imovelo?sslmode=require"
-
-# Auth (credentials only)
-AUTH_SECRET="gere com: openssl rand -hex 32"
-AUTH_URL="http://localhost:3000"
-
-# Azure Blob Storage (upload de imagens)
-
-
-# App
-NEXT_PUBLIC_APP_URL="http://localhost:3000"
 ```
 
 ---
