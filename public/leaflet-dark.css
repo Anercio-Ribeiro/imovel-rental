@@ -1,0 +1,61 @@
+/* public/leaflet-dark.css - imported in PropertyMap for dark tile styling */
+/* This is referenced in the map component via dynamic import */
+
+.leaflet-container {
+  background: #0f1a0f !important;
+}
+
+/* Dark map tiles - inverted for dark theme */
+.leaflet-tile-pane {
+  filter: invert(1) hue-rotate(180deg) saturate(0.5) brightness(0.65);
+}
+
+/* Keep markers un-inverted */
+.leaflet-marker-pane,
+.leaflet-popup-pane,
+.leaflet-overlay-pane {
+  filter: none !important;
+}
+
+/* Custom popup */
+.leaflet-popup-content-wrapper {
+  background: #1E1E26 !important;
+  border: 0.5px solid rgba(201,168,76,0.3) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5) !important;
+  color: #F0EDE8 !important;
+  padding: 0 !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  width: auto !important;
+}
+
+.leaflet-popup-tip {
+  background: #1E1E26 !important;
+}
+
+.leaflet-popup-close-button {
+  color: #9A968E !important;
+  top: 8px !important;
+  right: 8px !important;
+}
+
+/* Controls */
+.leaflet-control-zoom a {
+  background: #1E1E26 !important;
+  color: #F0EDE8 !important;
+  border-color: rgba(201,168,76,0.2) !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background: #2A2A35 !important;
+  color: #C9A84C !important;
+}
+
+.leaflet-bar {
+  border: 0.5px solid rgba(201,168,76,0.2) !important;
+  border-radius: 8px !important;
+  overflow: hidden;
+}
