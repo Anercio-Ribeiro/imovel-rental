@@ -104,3 +104,11 @@ export function buildQueryString(params: Record<string, unknown>): string {
   }
   return searchParams.toString();
 }
+
+
+// src/lib/utils.ts
+export function normalizeProperty<T extends Record<string, unknown>>(p: T) {
+  return Object.fromEntries(
+    Object.entries(p).map(([k, v]) => [k, v === null ? undefined : v])
+  ) as { [K in keyof T]: null extends T[K] ? Exclude<T[K], null> | undefined : T[K] };
+}
